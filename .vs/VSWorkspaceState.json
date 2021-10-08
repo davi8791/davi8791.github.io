@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bacs200"
+    "\\bacs200",
+    "\\bacs200\\images",
+    "\\bacs200\\images\\superheros"
   ],
-  "SelectedNode": "\\bacs200\\inspire.html",
+  "SelectedNode": "\\bacs200\\test.html",
   "PreviewInSolutionExplorer": false
 }
