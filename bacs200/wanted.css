@@ -43,28 +43,57 @@ body {
     box-shadow: 0px 4px 20px black;
 }
 
-header {
+#poster {
     text-align: center;
+    margin: 1in;
+    padding: 20px;
+    margin: 20px;
+    background-color: tan;
+    border: 2px solid gray;
+    font-family: impact;
+    box-shadow: 20px 20px 30px black;
 }
 
 main {
-    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid gray;
 }
 
 footer {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid gray;
+}
+
+header {
     text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: antiquewhite;
+    border: 2px solid gray;
 }
 
-#poster {
-    background-image: url("images/wanted/WantedPoster.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+section {
+    margin: 20px;
+    padding: 20px;
+    float: left;
 }
 
-#poster-content {
-    padding-top: 60px;
-    padding-bottom: 60px;
+footer {
+    clear: both;
+    margin: 20px;
+    padding: 20px;
+}
+
+aside {
+    background-color: antiquewhite;
+    font-size: 22px;
+    padding: 20px;
+    margin-top: 120px;
+    border: 2px solid gray;
+    float: right;
+    width: 30%;
 }
