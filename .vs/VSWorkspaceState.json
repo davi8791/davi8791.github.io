@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bacs200"
+    "\\bacs200",
+    "\\bacs200\\images",
+    "\\bacs200\\images\\nonprofit"
   ],
-  "SelectedNode": "\\bacs200\\superhero.html",
+  "SelectedNode": "\\bacs200\\images\\nonprofit\\khan-academy-2.png",
   "PreviewInSolutionExplorer": false
 }
