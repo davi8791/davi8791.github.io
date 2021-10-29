@@ -1,37 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: lightgray;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-top: 140px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
 
-<head>
-    <title>Blog</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+            .side-bar {
+                background-color: rgb(14, 61, 101);
+                position: fixed;
+                top: 0px;
+                height: 120%;
+                width: 2%;
+            }
 
-<body class="bg-dark text-light" style="font-size:120%;">
+            #left-bar {
+                left: 0px;
+                box-shadow: 2px 0px 20px black;
+            }
 
-    <div class="container-fluid p-5 bg-primary text-white text-center">
-        <a href="index.html" class="text-white">
-            <h1>Why You Should Get Vaccinated</h1>
-        </a>
-        <p>A blog on the pros and cons of getting vaccinated for COVID-19</p>
-    </div>
+            #right-bar {
+                right: 0px;
+                box-shadow: -2px 0px 20px black;
+            }
 
-    <div class="container-fluid p-5">
-        <div class="row">
-            <div class="col">
-                <h1>Intro</h1>
-                <img src="images/blog/Vaccine.jpg" class="rounded-circle" alt="Placeholder image" style="float:right;width:40%;padding-left:5px;" />
-                <p>
-                    The COVID-19 pandemic has undoubtedly birthed many controversies between the right and left. The argument over 
-                    whether one has the right to not wear a mask still goes on today, about 1 and a half years into the pandemic. 
-                    Mask mandates are still in effect for a lot of highly populated areas in order to reduce the spread of the vaccine. 
-                    Now that multiple renditions of the vaccine have been developed, many are arguing that it is unsafe, and are opting 
-                    not to get it. I am here to argue that the vaccine is safe, and that there is no good reason not to get it.
-                </p>
-            </div>
-            <div class="col">
+            #bear-logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+            }
+
+            #top-bar {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 120px;
+                background-color: rgb(240,240,240);
+                box-shadow: 0px 4px 20px black;
+                z-index: 100;
+            }
+        </style>
+    </head>
+    <body class="bg-dark text-light" style="font-size:120%;">
+        <div id="left-bar" class="side-bar"></div>
+        <div id="right-bar" class="side-bar"></div>
+        <div id="top-bar">
+            <a href="https://www.unco.edu/">
+                <img src="images/Bear.png" alt="Logo" id="bear-logo">
+            </a>
+        </div>
+        <div class="container-fluid p-5 bg-primary text-white text-center">
+            <a href="index.html" class="text-white">
+                <h1>Why You Should Get Vaccinated</h1>
+            </a>
+            <p>A blog on the pros and cons of getting vaccinated for COVID-19</p>
+        </div>
+
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h1>Intro</h1>
+                    <img src="images/blog/Vaccine.jpg" class="rounded-circle" alt="Placeholder image" style="float:right;width:40%;padding-left:5px;" />
+                    <p>
+                        The COVID-19 pandemic has undoubtedly birthed many controversies between the right and left. The argument over
+                        whether one has the right to not wear a mask still goes on today, about 1 and a half years into the pandemic.
+                        Mask mandates are still in effect for a lot of highly populated areas in order to reduce the spread of the vaccine.
+                        Now that multiple renditions of the vaccine have been developed, many are arguing that it is unsafe, and are opting
+                        not to get it. I am here to argue that the vaccine is safe, and that there is no good reason not to get it.
+                    </p>
+                </div>
+                <div class="col">
                     <div class="card row p-0 m-5 bg-dark">
                         <div class="card-header bg-primary text-light"><b>Pros</b></div>
                         <div class="card-body bg-success text-light">
@@ -51,64 +103,62 @@
                                 <li>Very small chance of side-effects (as with any vaccine)</li>
                             </ul>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid p-5 bg-primary text-white">
-        <div class="row">
-            <div class="col-sm">
-                <h3>Social Implications</h3>
-                <p>
-                    COVID-19 has negatively affected everyone in many ways over the past 20 years. The virus is highly contagious, meaning 
-                    that ever since the start of the pandemic, people have been asked to stay home as often as possible. Even in social areas,
-                    masks are usually either highly encouraged or required. This has hurt everyone socially, especially 2020 high school graduates
-                    who were forced to have a year of online college. Getting the vaccine means that you are helping this struggle come to an end 
-                    for everyone socially. Generally, it is more socially acceptable to get the vaccine in densely populated areas, where the 
-                    spread of the disease is most likely to happen, whereas the opposite is generally true for less populated areas. This may 
-                    also be because of politics.
-                </p>
-            </div>
-            <div class="col-sm">
-                <h3>Economic Implications</h3>
-                <p>
-                    The pandemic has also had many economic consequences over the past few years. Because of the stay at home orders and mask mandates,
-                    many small businesses are closing their doors due to their inability to make a sustainable profit. This isn�t just affecting big 
-                    businesses however. Large businesses have often been forced to all work from home, which puts a huge hindrance on production in
-                    general. In addition, an outbreak in an area may mean a lot of premature deaths, causing even more of a hindrance on productivity.
-                    Many corporations are now requiring their employees to get vaccinated, which has resulted in a large decrease in the spread of the 
-                    disease. However, there is still quite a bit of controversy over whether corporations should be allowed to require their employees 
-                    to get vaccinated. I would argue that corporations should be allowed to do this, as long as the person receiving the vaccine has some 
-                    sort of allergy that prevents them from receiving it.
-                </p>
-            </div>
-            <div class="col-sm">
-                <h3>Political Implications</h3>
-                <p>
-                    With almost everything currently depending on politics, it is a bit hard to distinguish between the social and political implications 
-                    of the vaccine. Usually, the two are so intertwined that the vaccine cannot be brought up without going into a whole political debate. 
-                    Most right winged people would say that the vaccine isn't safe, and is premature, where most left winged people would encourage others 
-                    to get it. Luckily, most right winged people live in sparsely populated areas with a low risk, and most left winged people live in densely 
-                    populated areas with a high risk. However, just because someone is at low risk doesn't mean they are immune to COVID, so I would argue that 
-                    everyone should make an effort to get the vaccine.
-                </p>
+        <div class="container-fluid p-5 bg-primary text-white">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>Social Implications</h3>
+                    <p>
+                        COVID-19 has negatively affected everyone in many ways over the past 20 years. The virus is highly contagious, meaning
+                        that ever since the start of the pandemic, people have been asked to stay home as often as possible. Even in social areas,
+                        masks are usually either highly encouraged or required. This has hurt everyone socially, especially 2020 high school graduates
+                        who were forced to have a year of online college. Getting the vaccine means that you are helping this struggle come to an end
+                        for everyone socially. Generally, it is more socially acceptable to get the vaccine in densely populated areas, where the
+                        spread of the disease is most likely to happen, whereas the opposite is generally true for less populated areas. This may
+                        also be because of politics.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <h3>Economic Implications</h3>
+                    <p>
+                        The pandemic has also had many economic consequences over the past few years. Because of the stay at home orders and mask mandates,
+                        many small businesses are closing their doors due to their inability to make a sustainable profit. This isn�t just affecting big
+                        businesses however. Large businesses have often been forced to all work from home, which puts a huge hindrance on production in
+                        general. In addition, an outbreak in an area may mean a lot of premature deaths, causing even more of a hindrance on productivity.
+                        Many corporations are now requiring their employees to get vaccinated, which has resulted in a large decrease in the spread of the
+                        disease. However, there is still quite a bit of controversy over whether corporations should be allowed to require their employees
+                        to get vaccinated. I would argue that corporations should be allowed to do this, as long as the person receiving the vaccine has some
+                        sort of allergy that prevents them from receiving it.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <h3>Political Implications</h3>
+                    <p>
+                        With almost everything currently depending on politics, it is a bit hard to distinguish between the social and political implications
+                        of the vaccine. Usually, the two are so intertwined that the vaccine cannot be brought up without going into a whole political debate.
+                        Most right winged people would say that the vaccine isn't safe, and is premature, where most left winged people would encourage others
+                        to get it. Luckily, most right winged people live in sparsely populated areas with a low risk, and most left winged people live in densely
+                        populated areas with a high risk. However, just because someone is at low risk doesn't mean they are immune to COVID, so I would argue that
+                        everyone should make an effort to get the vaccine.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid p-5">
-        <h1>Conclusion</h1>
-        <p>
-            Many argue that the vaccines are unsafe, either because they are too new or they may cause life threatening side-effects. The vaccines were able to
-            be developed quickly, but this does not mean they were inadequately tested or premature. Their quick development was caused by a number of reasons, 
-            such as their use of mRNA, allowing for a faster approach, and the technology of mRNA vaccines having already been in development for decades. The 
-            vaccines can cause side-effects, such as myocarditis (inflammation of the heart muscle) and pericarditis (inflammation of the lining outside the heart) 
-            among a few others. These side-effects, however, are extremely rare. Only about one thousand reports have been made out of the hundreds of millions who 
-            have gotten the vaccine. In my opinion, the benefits seem to outweigh the risk.
-        </p>
-    </div>
-
-</body>
-
+        <div class="container-fluid p-5">
+            <h1>Conclusion</h1>
+            <p>
+                Many argue that the vaccines are unsafe, either because they are too new or they may cause life threatening side-effects. The vaccines were able to
+                be developed quickly, but this does not mean they were inadequately tested or premature. Their quick development was caused by a number of reasons,
+                such as their use of mRNA, allowing for a faster approach, and the technology of mRNA vaccines having already been in development for decades. The
+                vaccines can cause side-effects, such as myocarditis (inflammation of the heart muscle) and pericarditis (inflammation of the lining outside the heart)
+                among a few others. These side-effects, however, are extremely rare. Only about one thousand reports have been made out of the hundreds of millions who
+                have gotten the vaccine. In my opinion, the benefits seem to outweigh the risk.
+            </p>
+        </div>
+    </body>
 </html>
