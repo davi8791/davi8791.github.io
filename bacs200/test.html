@@ -1,149 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Testing Page</title>
-        <style>
-            body {
-                font-family: sans-serif;
-                background-color: lightgray;
-                margin-left: 2%;
-                margin-right: 2%;
-                margin-top: 140px;
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-            .side-bar {
-                background-color: rgb(14, 61, 101);
-                position: fixed;
-                top: 0px;
-                height: 120%;
-                width: 2%;
-            }
-            #left-bar {
-                left: 0px;
-                box-shadow: 2px 0px 20px black;
-            }
-            #right-bar {
-                right: 0px;
-                box-shadow: -2px 0px 20px black;
-            }
-            #bear-logo {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 10px;
-            }
-            #top-bar {
-                position: fixed;
-                left: 0px;
-                top: 0px;
-                width: 100%;
-                height: 120px;
-                background-color: rgb(240,240,240);
-                box-shadow: 0px 4px 20px black;
-            }
-            table, th, td {
-                border: 5px groove white;
-                border-collapse: collapse;
-                padding: 10px;
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="left-bar" class="side-bar"></div>
-        <div id="right-bar" class="side-bar"></div>
-        <div id="top-bar">
-            <a href="https://www.unco.edu/">
-                <img src="images/Bear.png" alt="Logo" id="bear-logo">
-            </a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <link href="davi8791.css" rel="stylesheet">
+    <!--Change-->
+
+    <title>davi8791.github.io</title>
+
+    <style>
+        table, th, td {
+            border: 5px groove white;
+            border-collapse: collapse;
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    </style>
+
+    <!--Change-->
+</head>
+<body>
+
+    <header class="navbar navbar-expand flex-column flex-md-row bd-navbar fixed-top">
+        <h1 class="navbar-brand mr-0 mr-md-2 nav-item text-mediumseagreen" style="font-size:28px;">davi8791.github.io</h1>
+        <div class="navbar-nav-scroll">
+            <ul class="navbar-nav bd-navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/davi8791/davi8791.github.io">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://shrinking-world.com/course/bacs200">Course Page</a>
+                </li>
+            </ul>
         </div>
-        <h1 style="font-size: 50px; font-family: Impact;">Testing page</h1>
-        <h2>Different Links as List</h2>
-        <ul>
-            <li>
-                <a href="../bacs200">Visit my BACS200 Folder</a>
-            </li>
-            <li>
-                <a href="../index.html">Visit my BACS200 Index</a>
-            </li>
-            <li>
-                <a href=".">Visit my Current Folder</a>
-            </li>
-            <li>
-                <a href="/">Visit Root at /</a>
-            </li>
-            <li>
-                <a href="https://validator.w3.org">HTML Validator</a>
-            </li>
-            <li>
-                <a href="https://davi8791.github.io/bacs200/index.html">My Website</a>
-            </li>
-        </ul>
-        <h2>Project Test Links</h2>
-        <table>
-            <tr>
-                <th>Project Number</th>
-                <th>Link</th>
-                <th>Project Instructions</th>
-                <th>HTML Validator</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td><a href="../index.html">Index Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/01">Student Profile Page</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Findex.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><a href="inspire.html">Inspiration Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/02">My Inspiration</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Finspire.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><a href="amuse.html">Amuse Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/03">Amuse Me</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Famuse.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td><a href="educate.html">Educate Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/04">Educate Me</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Feducate.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td><a href="test.html">Test Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/05">Page Testing</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Ftest.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td><a href="superhero.html">Superhero Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/06">Superhero Gallery</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fsuperhero.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td><a href="wanted.html">Wanted Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/07">Wanted Poster</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fwanted.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td><a href="blog.html">Blog Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/08">Blog</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fblog.html">Validate</a></td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td><a href="nonprofit.html">Nonprofit Organization Page</a></td>
-                <td><a href="https://shrinking-world.com/course/bacs200/project/09">Nonprofit</a></td>
-                <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fnonprofit.html">Validate</a></td>
-            </tr>
-        </table>
-    </body>
+    </header>
+
+    <!--Change-->
+
+    <h1 style="font-size: 50px; font-family: Impact;">Testing page</h1>
+    <h2>Different Links as List</h2>
+    <ul>
+        <li>
+            <a href="../bacs200">Visit my BACS200 Folder</a>
+        </li>
+        <li>
+            <a href="../index.html">Visit my BACS200 Index</a>
+        </li>
+        <li>
+            <a href=".">Visit my Current Folder</a>
+        </li>
+        <li>
+            <a href="/">Visit Root at /</a>
+        </li>
+        <li>
+            <a href="https://validator.w3.org">HTML Validator</a>
+        </li>
+        <li>
+            <a href="https://davi8791.github.io/bacs200/index.html">My Website</a>
+        </li>
+    </ul>
+    <h2>Project Test Links</h2>
+    <table>
+        <tr>
+            <th>Project Number</th>
+            <th>Link</th>
+            <th>Project Instructions</th>
+            <th>HTML Validator</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="../index.html">Index Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/01">Student Profile Page</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Findex.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="inspire.html">Inspiration Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/02">My Inspiration</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Finspire.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="amuse.html">Amuse Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/03">Amuse Me</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Famuse.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="educate.html">Educate Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/04">Educate Me</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Feducate.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="test.html">Test Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/05">Page Testing</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Ftest.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="superhero.html">Superhero Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/06">Superhero Gallery</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fsuperhero.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="wanted.html">Wanted Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/07">Wanted Poster</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fwanted.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="blog.html">Blog Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/08">Blog</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fblog.html">Validate</a></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="nonprofit.html">Nonprofit Organization Page</a></td>
+            <td><a href="https://shrinking-world.com/course/bacs200/project/09">Nonprofit</a></td>
+            <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavi8791.github.io%2Fbacs200%2Fnonprofit.html">Validate</a></td>
+        </tr>
+    </table>
+
+    <!--Change-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
 </html>
