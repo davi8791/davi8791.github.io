@@ -37,3 +37,6 @@ body {
 .fill-width {
     width: 100%;
 }
+.fill-height {
+    height: 100%;
+}
