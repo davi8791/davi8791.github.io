@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="icon" type="image/x-icon" href="bean.jpg">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: lightskyblue;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .checkout-container {
+      width: 360px;
+      margin: 0 auto;
+    }
+
+    .cart-item {
+      text-shadow: none;
+      display: flex;
+      color:black;
+      align-items: center;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 5px 5px rgb(88, 119, 129);
+    }
+
+    .quantity-buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity-button {
+      cursor: pointer;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .quantity-input {
+      width: 50px;
+      text-align: center;
+    }
+
+    .total-price {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .quantity-buttons {
+        margin-left: 10px;
+    }
+
+    .quantity-input {
+        margin: 0 5px;
+    }
+
+    .submit {
+        box-shadow: 5px 5px rgb(88, 119, 129);
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>Checkout</h1>
+
+    <div class="cart-item">
+      <img src="bean.jpg" width="100px" alt="Bean">
+      <div>
+        <h3>Premium Bean</h3>
+        <p>$10.00</p>
+      </div>
+
+      <div class="quantity-buttons">
+        <button class="quantity-button minus">-</button>
+        <p class="quantity-input">1</p>
+        <button class="quantity-button plus">+</button>
+      </div>
+    </div>
+
+    <p class="total-price">Total: $10.00</p>
+
+    <button class="submit">Place Order</button>
+  </div>
+  <script>
+    let numItems = 1;
+
+    // Get the quantity input field
+    const quantityInput = document.querySelector(".quantity-input");
+
+    // Add event listeners to the + and - buttons
+    document.querySelector(".quantity-button.plus").addEventListener("click", () => {
+        // Increase the quantity by 1
+        numItems++;
+        quantityInput.innerHTML = numItems;
+
+        // Update the total price
+        updateTotalPrice();
+    });
+
+    document.querySelector(".quantity-button.minus").addEventListener("click", () => {
+        // Decrease the quantity by 1, but make sure it doesn't go below 1
+        numItems = Math.max(1, numItems - 1);
+        quantityInput.innerHTML = numItems;
+
+        // Update the total price
+        updateTotalPrice();
+    });
+
+    // Function to update the total price
+    function updateTotalPrice() {
+        // Get the quantity and price of the item
+        const quantity = numItems;
+        const price = 10.00;
+
+        // Calculate the total price
+        const totalPrice = quantity * price;
+
+        // Update the total price element
+        document.querySelector(".total-price").innerHTML = `Total: $${totalPrice.toFixed(2)}`;
+    }
+
+    document.querySelector(".submit").addEventListener("click", () => {
+        let text = "Cool beans, you ordered " + numItems + " bean";
+        let end = numItems > 1 ? "s!" : "!";
+        alert(text + end);
+    });
+  </script>
+</body>
+</html>
